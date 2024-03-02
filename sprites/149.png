@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>MixMaster Oficial</title>
+    <link href="/themes/default/css/eadev.min.css" rel="stylesheet" type="text/css" media="screen" title=""
+          charset="utf-8"/>
+    <link href="/themes/default/css/bootstrap.css rel=" stylesheet
+    " type="text/css" media="screen" title="" charset="utf-8" />
+    <link href="/themes/default/css/flux/unitip.css" rel="stylesheet" type="text/css" media="screen" title=""
+          charset="utf-8"/>
+    <script>var themePath = 'themes/default/';</script>
+    <meta name="keywords" content="mixmaster, mix, mmorpg, mixmasteronline, mixmasterpirata, mixmaster pirata, mixmaster oficial, 77pb, mmfr, mmau, mixmasterau, mixmaster, mixmasterbox, box premium, premium box, eventos, ragnarok, grande chase, mu online, mixmaster pirata, mixmaster life, mixmaster devilco, mixmaster, freetoplay, mmorpg, mmonline, pc game, pokemon, monster, monster game, digimon, jogo gratis, gratuit, free to play, mixmasteronline, mmonline, mix master, mm, monsters game, control monsters, fight monsters, make friends, 2d game, 3d game, 2.5d game, massive multiplayer online, multiplayer game, strategy game, level up, pc game,A lively monster team battle SRPG!">
+    <script type="text/javascript" src="/themes/default/js/eadev.min.js"></script>
+    <script type="text/javascript" src="/themes/default/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/themes/default/js/flux.datefields.js"></script>
+    <script type="text/javascript" src="/themes/default/js/flux.unitip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="themes/default/editor/ckeditor.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="Paulo Sousa">
+    <meta name="description" content="MixMaster Online is a FREE to play MMORPG GAME with monster capturing option! A lively monster team battle SRPG! There are more than 1.000 monsters available for catching!">
+    <style>
+        .generic-form, .generic-form-table tr td, .generic-form-table tr th {
+            padding: 1px !important;
+        }
+
+        @media only screen and (max-width: 485px) {
+            #logogrande {
+                width: 60% !important;
+                top: -118px !important;
+            }
+
+            #pre {
+                width: 50% !important;
+                top: -40px !important;
+            }
+
+            #menina {
+                width: 47% !important;
+                top: -115px !important;
+            }
+
+            #formulario {
+                background: #ffffffba !important;
+                border: 1px solid #cdcdcd !important;
+                padding: 20px !important;
+                border-radius: 10px !important;
+                margin-top: -140px !important;
+            }
+
+            #ninja {
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+
+        .middle {
+            position: absolute;
+            top: 220px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+
+        @media only screen and (max-width: 585px) {
+            .counter {
+                z-index: 9 !important;
+                top: 101px !important;
+                width: 375px !important;
+                font-size: 6px !important;
+                margin-left: -36px !important;
+            }
+
+            .counter ul {
+                margin-left: -7px !important .
+            }
+
+            .counter li span {
+
+                font-size: 3.1rem !important;
+            }
+
+            .counter li {
+                display: inline-block !important;
+                font-size: 22px !important;
+                list-style-type: none !important;
+                padding: 3px !important;
+                text-transform: uppercase !important;
+            }
+        }
+
+
+        .counter {
+            color: #de7001;
+            text-align: center;
+            /* position: absolute; */
+            /* left: 0; */
+            /* right: 0; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            width: 396px;
+            /* background: #000009db; */
+            /* border: 1px solid; */
+            border-radius: 5px;
+            z-index: 9;
+            /* padding-top: 28px; */
+            top: 200px;
+            line-height: 9px;
+            text-align: center;
+            /* top: 173px; */
+            margin-left: -51px;
+
+        }
+
+
+        .counter h1 {
+            font-weight: normal;
+        }
+
+        .counter li {
+            display: inline-block;
+            font-size: 29px;
+            list-style-type: none;
+            padding: 1px;
+            text-transform: uppercase;
+        }
+
+        .counter li span {
+            font-size: 53px;
+            line-height: 52px;
+        }
+
+    </style>
+
+
+    <link href="/themes/default/css/bootstrap.css" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="server-status">
+		<div class="status online">
+		Servidor : <span class='online'>Online</span>		</div>
+	</div>
+
+<style>
+    .bg-dark-transparent {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+</style>
+<div class="header">
+			<div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-transparent">
+				<div class="container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+						<img src="/themes/default/img/navigation.svg" alt="">
+					</button>
+					<div class="collapse navbar-collapse" id="main-nav">
+						<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+							<li class="nav-item">
+								<a class="nav-link text-light" href="/Home">Home<span>Página Principal</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-light" href="/Register">Cadastro<span>Registrar Conta</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-light" href="/Download">Download<span>Últimos Patchs</span></a>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link text-light" href="/Boutique">Doação<span>Ajude o Servidor</span></a>
+							</li>
+
+							<li class="nav-item">
+								<a class="navbar-brand" href="/Accueil"><img src="/themes/default/img/logo.png" alt="" class="img-fluid"></a>
+							</li>
+
+
+
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link text-light" href="javascript:return false;">Informações<span>Saiba de tudo</span></a>
+                             <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="/News">Todas noticias</a>
+						         <a class="dropdown-item" href="/Tutoriais">Tutoriais</a>
+                             </div>
+
+
+							<li class="nav-item">
+								<a class="nav-link text-light" href="/Mix" >Mixagem<span>Lista de mix</span></a>
+							</li>
+
+
+                            <li class="nav-item dropdown">
+                                 <a class="nav-link text-light" href="javascript:return false;">Shopping<span>Conheça a loja</span></a>
+                             <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="/Boutique">Loja de Cash</a>
+                             </div>
+			                </li>
+
+
+                            <li class="nav-item dropdown">
+				<a class="nav-link text-light" href="javascript:return false;">Rankings<span>Tops do Servidor</span></a>
+					<div class="dropdown-menu">
+                    <a class="dropdown-item" href="/RankingHero">Ranking Hero</a>
+						<a class="dropdown-item" href="/RankingHench">Ranking Hench</a>
+                        </div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        
+
+
+<div id='contain'>
+<style>
+.main{
+	margin-top:-30% !important;
+}
+</style>
+
+<style>
+body{background:#fff  }
+.a1 {
+    width: 40px;
+  height: 40px;
+  left:20px;
+  border: 50px solid transparent;
+  border-radius:50%;
+  top:10px;
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.a2 {
+    width: 60px;
+  height: 60px;
+  border: 50px solid transparent;
+  border-radius:50%;
+  top:-40px;
+  left:40px;
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.a3 {
+  z-index:999;
+    width: 120px;
+  height: 120px;
+ line-height:20px;
+  border: 50px solid transparent;
+  border-radius:50%;
+  top:-60px;
+  left:20px;
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.a4 {
+    width: 60px;
+  height: 60px;
+  border: 50px solid transparent;
+  border-radius:50%;
+  top:-30px;
+  left:80px;
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.a5 {
+    width: 40px;
+  height: 40px;
+  border: 50px solid transparent;
+  border-radius:50%;
+  top:-60px;
+  left:80px;
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+</style>
+
+<div role="main">
+<div class="content">
+<div id="slider"></div>
+<div id="first_panel">
+
+<div class="container">
+<div class="container main">
+<div id="formulario" style="
+    background: #ffffffc9;
+    border: 1px solid #cdcdcd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -69px;
+">
+
+<h2>ERROR 404</h2>
+        <div id="page_error">
+            A página solicitada não foi encontrada!</br><a href="Home">Retorne ao inicio</a>.
+        </div>
+<img src="/themes/default/img/menina.png" alt="" id="menina" style="
+    position: absolute;
+    right: 14px;
+    width: 276px;
+    top: -159px;
+">
+</div>
+</div>
+</div>
+</div></div>
+<footer>
+</div>
+    <div class="copyright">
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                        
+                    </div>
+                    <div class="col-lg-6">
+                    <div class="copyright-text">
+                    <strong>MixMaster<a href="#" target="_blank">Oficial</a>.</strong>
+                    </div>
+                    </div>
+						<div class="col-lg-3 text-center">
+							<a href="">
+								
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</footer>
+
+</body>
+<script>
+    async function defineCurrencies() {
+        let _response = await fetch("?a=General&define_currencies", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            }
+        });
+        await _response.json();
+    }
+
+    document.addEventListener("DOMContentLoaded", async (event) => {
+        await defineCurrencies();
+        setInterval(async () => {
+            await defineCurrencies();
+        }, 15000);
+    });
+</script>
+</html>

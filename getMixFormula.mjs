@@ -1,3 +1,4 @@
+// Make sure that you have run used `coreDatabase/getCoreDetails.mjs` to get the necessary data before running this script
 import fs from 'fs';
 
 const data = fs.readFileSync(`coreDatabase/coreDetails.json`, `utf8`);
