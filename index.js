@@ -5,7 +5,7 @@ let lastMatchedCore = 'Draco';
 function findKeyStartsWith(str) {
     const keys = Object.keys(mixFormulas);
     for (let i = 0; i < keys.length; i++) {
-        if (keys[i].startsWith(str)) {
+        if (keys[i].toLocaleLowerCase().startsWith(str.toLocaleLowerCase())) {
             return keys[i];
         }
     }

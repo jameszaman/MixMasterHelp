@@ -13,7 +13,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0;
+  margin: 40px 0;
 }
 
 .tree ul {
@@ -130,4 +130,8 @@ right connector from last child*/
 .tree li a:hover + ul::before,
 .tree li a:hover + ul ul::before {
   border-color: #94a0b4;
+}
+
+.core-selector {
+  padding: 2px 4px;
 }
