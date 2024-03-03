@@ -114,6 +114,8 @@ right connector from last child*/
   font-size: 11px;
   display: inline-block;
   color: white;
+  position: relative;
+  cursor: pointer;
 
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -180,4 +182,11 @@ right connector from last child*/
   width: 100px;
   aspect-ratio: 1/1;
   object-fit: contain;
+}
+
+ul span {
+  color: white;
+  position: absolute;
+  top: -.5rem; /*Don't know why negative half looks weird to me🤣*/
+  right: -.5rem;
 }

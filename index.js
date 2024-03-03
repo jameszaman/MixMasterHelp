@@ -12,26 +12,38 @@ function addFormula(core, depth=0) {
         // The website does not have data for `CheezDogg` for some reason.
         return;
     }
+
     const root = document.getElementById(core);
     const ul = document.createElement('ul');
     const liLeft = document.createElement('li');
     const liRight = document.createElement('li');
     const aLeft = document.createElement('a');
     const aRight = document.createElement('a');
+    const span = document.createElement('span');
+    // Find the <a/> of root before adding any other a.
+    const a = root.querySelector('a');
+    // Add number of mix formulas.
+    a.appendChild(span);
+
+    // Add the elements to the DOM
     root.appendChild(ul);
     ul.appendChild(liLeft);
     ul.appendChild(liRight);
     liLeft.appendChild(aLeft);
     liRight.appendChild(aRight);
+    // Add the necessary classes and attributes
     liLeft.id = mixFormulas[core][0][0].name;
     liRight.id = mixFormulas[core][0][1].name;
     aLeft.textContent = mixFormulas[core][0][0].name;
     aRight.textContent = mixFormulas[core][0][1].name;
+    span.textContent = mixFormulas[core].length;
+    span.title = 'Number of mix formulas';
+    // If there are same cores multiple times, these ids may cause issues
+    // For that reason we are removing the ids after adding the formulas.
     addFormula(mixFormulas[core][0][0].name, depth+1);
     liLeft.removeAttribute('id');
     addFormula(mixFormulas[core][0][1].name, depth+1);
     liRight.removeAttribute('id');
-
 }
 
 // If the key exists, add the value to it, otherwise create a new key with the value.
