@@ -8,12 +8,20 @@ body {
   overflow-x: scroll;
 }
 
-main {
-  min-height: 100vh;
+/* main {
+  min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   margin: 40px 0;
+} */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 400px 1fr;
+  place-items: center;
 }
 
 .tree ul {
@@ -132,6 +140,44 @@ right connector from last child*/
   border-color: #94a0b4;
 }
 
-.core-selector {
+.search-bar {
   padding: 2px 4px;
+}
+
+.core-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 20px 0 20px;
+}
+
+.core {
+  color: white;
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 5px 10px;
+  background-color: hsl(0, 0%, 17%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  width: 120px;
+  aspect-ratio: 1/1;
+}
+
+.core:hover {
+  background-color: hsl(0, 0%, 29%);
+  border: 1px solid hsl(218, 18%, 64%);
+}
+
+.core-list img {
+  width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }

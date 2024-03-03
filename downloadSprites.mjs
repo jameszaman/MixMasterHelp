@@ -29,16 +29,14 @@ const coreDetails = JSON.parse(data);
 let count = 0;
 coreDetails.forEach((coreType) => {
     coreType.coreDetails.forEach((core) => {
-        const spritePath = `coreDatabase/sprites/${core["coreName"]}.png`;
-        // downloadImage(core["sprite"], spritePath);
         setTimeout(() => {
             const url = `https://mixmasteroficial.com.br/themes/default/img/Hench/${core["coreNumber"]}.png`;
-            if(fs.existsSync(`sprites/${core["coreNumber"]}.png`)) {
-                console.log(`Skipping ${core["coreNumber"]}`);
+            if(fs.existsSync(`sprites/${core["coreName"]}.png`)) {
+                console.log(`Skipping ${core["coreName"]}`);
             }
             else {
-                console.log(`Downloading ${core["coreNumber"]}`);
-                downloadImage(url, `sprites/${core["coreNumber"]}.png`);
+                console.log(`Downloading ${core["coreName"]}`);
+                downloadImage(url, `sprites/${core["coreName"]}.png`);
             }
         }, count * 100);
         count++;
