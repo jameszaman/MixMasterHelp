@@ -14,7 +14,8 @@ function addCoreTo(target, core, extraClass="", func=()=>{}) {
     if(extraClass) {
         coreDiv.classList.add(extraClass);
     }
-    img.src = `sprites/${core}.png`;
+    img.src = `sprites/${core.split(" ")[0]}.png`;
+    console.log(core, core.split(" ")[0]);
     img.alt = '';
     p.textContent = core;
 
@@ -38,9 +39,9 @@ function toggleOverlay(core, ele=undefined) {
             const formulaContainer = document.createElement('div');
             formulaContainer.classList.add('formula-container');
             overlay.appendChild(formulaContainer);
-            addCoreTo(formulaContainer, formula[0].name);
+            addCoreTo(formulaContainer, formula[0].name + ` (${formula[0].itemLevel})`);
             formulaContainer.appendChild(document.createTextNode(' + '));
-            addCoreTo(formulaContainer, formula[1].name);
+            addCoreTo(formulaContainer, formula[1].name + ` (${formula[1].itemLevel})`);
             formulaContainer.addEventListener('click', function() {
                 selectedCore.id = core;
                 const innerChilds = selectedCore.querySelector('ul');

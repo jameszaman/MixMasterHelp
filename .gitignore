@@ -1,4 +1,4 @@
 node_modules/
 coreDatabase/*.html
 coreDatabase/*.json
-*temp.html
+*temp.*
