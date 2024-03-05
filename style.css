@@ -185,21 +185,19 @@ ul span {
 .formula-picker-overlay {
   position: fixed;
   color: white;
-  border: 1px solid hsl(0, 0%, 80%);
-  padding: 5px 10px;
+  border: 1px solid hsl(0, 0%, 50%);
+  padding: 5px 20px;
   background-color: hsl(0, 0%, 17%);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 10px;
   cursor: pointer;
-  top: 30%;
-  max-width: 80vh;
-  flex-wrap: wrap;
+  top: 20vh;
+  max-height: 60vh;
+  overflow-y: scroll;
   transition: all 0.5s;
 }
 
